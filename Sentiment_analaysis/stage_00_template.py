@@ -2,19 +2,14 @@ import argparse
 import os
 import shutil
 from tqdm import tqdm
-import logging
+from logger import logging
 from Sentiment_analaysis.utils.common import read_yaml, create_directories
 import random
 
 
 STAGE = "STAGE_NAME" ## <<< change stage name 
 
-logging.basicConfig(
-    filename=os.path.join("logs", 'running_logs.log'), 
-    level=logging.INFO, 
-    format="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s",
-    filemode="a"
-    )
+
 
 
 def main(config_path, params_path):

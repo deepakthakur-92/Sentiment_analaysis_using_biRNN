@@ -5,6 +5,7 @@ pandas
 numpy
 PyYAML
 tensorflow
+pymongo
 
 ### local packages -
 # -e . # << uncomment this to install from setup.py

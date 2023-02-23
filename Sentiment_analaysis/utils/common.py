@@ -1,6 +1,6 @@
 import os
 import yaml
-import logging
+from logger import logging
 import json
 
 def read_yaml(path_to_yaml: str) -> dict:
